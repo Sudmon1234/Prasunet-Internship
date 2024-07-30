@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Kolkata</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"> <h1 class="animate__animated animate__heartBeat">KOLKATA</h1> </div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <main>
+      <section id="home">
+        <h3>Welcome to Kolkata</h3>
+        <h1>Do come and visit <span class="change_contain"></span></h1>
+        <p>"Kolkata once is not enough"</p>
+        <a href="#" class="btnone">Learn More</a>
+        <a href="#" class="btntwo">Sign Up Here</a>
+      </section>
+    </main>
+  </header>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="./images/birla.png" alt="Birla Planetarium">
+      <img src="./images/dakshineswar.png" alt="Dakshineswar Kali Temple">
+      <img src="./images/eden_garden.png" alt="Eden Gardens">
+      <img src="./images/howrah_bridge.png" alt="Howrah Bridge">
+      <img src="./images/indian_museum.png" alt="Indian Museum">
+      <img src="./images/parkStreet.png" alt="Park Street">
+      <img src="./images/science_city.png" alt="Science City">
+      <img src="./images/st.pauls cathedral.png" alt="St. Paul's Cathedral">
+      
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Kolkata</h2>
+    <p>
+      Kolkata, formerly known as Calcutta in English, is the capital of the Indian state of West Bengal and is located in eastern India on the east bank of the River Hooghly. The city was a colonial city developed by the British East India Company and then by the British Empire. Kolkata was the capital of the British Indian empire until 1911 when the capital was relocated to Delhi. Kolkata grew rapidly in the 19th century to become the second city of the British Empire. This was accompanied by the development of a culture that fused European philosophies with Indian tradition.
+      During the British colonial era from 1700 to 1912 Kolkata was the capital of British India. Kolkata witnessed a spate of frenzied construction activity in the early 1850s by several British companies. The construction was largely influenced by the conscious intermingling of Neo-Gothic, Baroque, Neo-Classical, and Oriental designs. Unlike many north Indian cities, whose construction stresses minimalism, much of the layout of the architectural variety in Kolkata owes its origins from European styles and tastes imported mainly by the British, and lesser extent of the Portuguese and French.
+
+    </p>
+    <img src="./images/victoria12.png" alt="Victoria Memorial">
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
