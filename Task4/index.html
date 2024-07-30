@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h2>Sudeshna</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="header">
+        <div class="header-left">
+            <div class="container">
+
+                <div class="header">
+                    <div class="header-text">
+                        <p>Web Developer</p>
+                        <h1>Hi, I'm <span>Sudeshna Mondal</span></h1>
+                        
+                    </div>
+                    <div class="header-img">
+                        <img src="images/background_image.png" alt="" width="500px" height="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-right"></div>
+    </div>
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a web developer with a passion for creating innovative web solutions.With a strong foundation in web development,I love turning complex problems into simple,beautiful and intuitive designs.</p>
+                    <p>I am able to handle multiple tasks on a daily basis. I use a creative approach to solve the
+                        problem. I am an energetic person ,adaptive in nature and eager to learn new things. I strongly
+                        believe passion brings possibilities to. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Mobile App Development</li>
+                            <li><span>AI/ML</span><br>Implementing machine learning models and AI solutions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>Bsc in Electronics from Calcutta University</li>
+                            <li><span>2024(pursuing)</span><br>Btech in Information Technology from Calcutta University
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/task1image.png" alt="Work 1">
+                    <h2>Project 1</h2>
+                    <p>Welcome to Kolkata</p>
+                </div>
+                <div class="work">
+                    <img src="images/task2image.png" alt="Work 2">
+                    <h2>Project 2</h2>
+                    <p>Stopwatch web Application</p>
+                </div>
+                <div class="work">
+                    <img src="images/task3image.png" alt="work 3">
+                    <h2>Project 3</h2>
+                    <p>Tic-Tac-Toe Web Application</p>
+                </div>
+                <div class="work">
+                    <img src="images/task5image.png" alt="work 4">
+                    <h2>Project 4</h2>
+                    <p>Weather App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>sudeshnamondal302@gmail.com</p>
+                    <p>6294058039</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-linkedIn"></i></a>
+                    </div>
+                    <a href="images/My Resume.pdf">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p>&copy; 2024 copyright. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

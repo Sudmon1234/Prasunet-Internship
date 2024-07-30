@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #080808;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 90vh;
+  background: #FF4E50;
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+  background: linear-gradient(to right, #F9D423, #FF4E50);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  margin-top: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-img {
+  margin: 35px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+#About {
+  background-color: rgba(0, 247, 255, 0.219);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  padding: 10px 30px;
+  box-shadow: 0px 2px 100px 10px rgba(0, 0, 0, 0.144);
+}
+
+nav h2 {
+  color: #000000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #030303;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ff004f;
+  color: white;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: #ff004f;
+}
+
+#About {
+  padding: 88px 0;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10%;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 80%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: aqua;
+  font-size: 14px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+
+
+#Work {
+  padding: 88px 0;
+  color: #ababab;
+  background-color: rgba(255, 0, 0, 0.11);
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.work {
+  text-align: center;
+  overflow: hidden;
+  /* Ensure child elements don't overflow the container */
+  border-radius: 10px;
+  /* Maintain rounded corners on hover */
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  /* Ensure images cover the container while maintaining aspect ratio */
+  max-height: 200px;
+  /* Set a maximum height for the images */
+  transition: transform 0.3s ease-in-out;
+  /* Smooth transition for hover effect */
+}
+
+.work img:hover {
+  transform: scale(1.1);
+  /* Zoom in on hover */
+}
+
+.work h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.work p {
+  color: #ababab;
+}
+
+
+
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+  margin-bottom: 10%;
+}
+
+.contact-left p {
+  margin-top: 5%;
+}
+
+.contact-left a {
+  color: #ff004f;
+  text-decoration: none;
+}
+
+.contact-left a:hover {
+  text-decoration: underline;
+}
+
+.contact-left i {
+  margin-right: 10px;
+}
+
+/* Reduce margin between email and phone number */
+.contact-left .contact-info {
+  margin-bottom: 10px;
+  /* Adjust this value as needed */
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right label {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-right button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff004f;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-right button:hover {
+  background-color: #e60046;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+}
+
+#footer {
+  background-color: #181818;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#footer p a {
+
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#footer p a:hover {
+  text-decoration: underline;
+}
