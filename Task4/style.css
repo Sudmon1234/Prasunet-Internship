@@ -202,16 +202,12 @@ nav ul li a:hover {
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-  /* Ensure images cover the container while maintaining aspect ratio */
   max-height: 200px;
-  /* Set a maximum height for the images */
   transition: transform 0.3s ease-in-out;
-  /* Smooth transition for hover effect */
 }
 
 .work img:hover {
   transform: scale(1.1);
-  /* Zoom in on hover */
 }
 
 .work h2 {
@@ -251,10 +247,10 @@ nav ul li a:hover {
   margin-right: 10px;
 }
 
-/* Reduce margin between email and phone number */
+
 .contact-left .contact-info {
   margin-bottom: 10px;
-  /* Adjust this value as needed */
+  
 }
 
 .contact-right form {
